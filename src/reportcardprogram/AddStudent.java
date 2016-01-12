@@ -284,6 +284,8 @@ public class AddStudent extends javax.swing.JFrame {
     subjectB.getText() + ": " + avgB.getText(),
     subjectC.getText() + ": " + avgC.getText(),
             subjectD.getText() + ": " + avgD.getText()});
+    
+    this.dispose();
 
         
     }//GEN-LAST:event_jToggleButton1ActionPerformed
