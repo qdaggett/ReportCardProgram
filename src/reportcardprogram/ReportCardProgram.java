@@ -40,14 +40,14 @@ public class ReportCardProgram extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null}
+
             },
             new String [] {
-                "Name", "Average", "Period A", "Period B", "Period C", "Period D", "Period E"
+                "Name", "Average", "Subject A", "Subject B", "Subject C", "Subject D"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
+                false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -61,7 +61,6 @@ public class ReportCardProgram extends javax.swing.JFrame {
         jTable1.getColumnModel().getColumn(3).setResizable(false);
         jTable1.getColumnModel().getColumn(4).setResizable(false);
         jTable1.getColumnModel().getColumn(5).setResizable(false);
-        jTable1.getColumnModel().getColumn(6).setResizable(false);
 
         jToggleButton1.setText("Add Student");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {

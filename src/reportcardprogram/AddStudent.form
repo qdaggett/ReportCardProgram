@@ -88,10 +88,9 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="399" max="32767" attributes="0"/>
+              <EmptySpace pref="461" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

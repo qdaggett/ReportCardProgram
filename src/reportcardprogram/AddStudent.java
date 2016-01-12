@@ -213,9 +213,8 @@ public class AddStudent extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(subjectC, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(subjectD, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGap(62, 62, 62)))
-                .addContainerGap(399, Short.MAX_VALUE))
+                                        .addComponent(subjectD, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                .addContainerGap(461, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -272,20 +271,25 @@ public class AddStudent extends javax.swing.JFrame {
     }//GEN-LAST:event_subjectAActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-    DefaultTableModel model = (DefaultTableModel) ReportCardProgram.jTable1.getModel();
-    model.addRow(new Object[]{});
+   int average;
+    int subjectAverageA = Integer.parseInt(avgA.getText());
+    int subjectAverageB = Integer.parseInt(avgB.getText());
+    int subjectAverageC = Integer.parseInt(avgC.getText());
+    int subjectAverageD = Integer.parseInt(avgD.getText());
+    average = (subjectAverageA+subjectAverageB+subjectAverageC+subjectAverageD)/4;
+    String newAvg = average+" ";
+    totalAvg.setText(newAvg);
+        DefaultTableModel model = (DefaultTableModel) ReportCardProgram.jTable1.getModel();
+    model.addRow(new Object[]{name1.getText(), totalAvg.getText(), subjectA.getText() + ": " + avgA.getText(),
+    subjectB.getText() + ": " + avgB.getText(),
+    subjectC.getText() + ": " + avgC.getText(),
+            subjectD.getText() + ": " + avgD.getText()});
 
         
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void totalAvgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalAvgActionPerformed
-    int average = 0;
-    int subjectAverageA = Integer.parseInt(avgA.getText());
-    int subjectAverageB = Integer.parseInt(avgB.getText());
-    int subjectAverageC = Integer.parseInt(avgC.getText());
-    int subjectAverageD = Integer.parseInt(avgD.getText());
-    average = subjectAverageA+subjectAverageB+subjectAverageC+subjectAverageD/4;
-    //totalAvg.setText();
+    
     }//GEN-LAST:event_totalAvgActionPerformed
 
     private void subjectCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectCActionPerformed
@@ -334,6 +338,8 @@ public class AddStudent extends javax.swing.JFrame {
 
     // getValue() always returns something valid
     System.out.println(field.getValue());
+    
+    
 
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
