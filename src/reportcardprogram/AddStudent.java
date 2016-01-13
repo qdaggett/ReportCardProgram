@@ -308,6 +308,9 @@ public class AddStudent extends javax.swing.JFrame {
     subjectC.getText() + ": " + avgC.getText(),
             subjectD.getText() + ": " + avgD.getText()});
     
+//    File outFile = new File("test.txt");
+//    PrintStream out = new PrintStream(outFile);
+    
     this.dispose();
 
         
@@ -352,7 +355,7 @@ public class AddStudent extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) throws IOException {
         /* Set the Nimbus look and feel */
     NumberFormat format = NumberFormat.getInstance();
     NumberFormatter formatter = new NumberFormatter(format);

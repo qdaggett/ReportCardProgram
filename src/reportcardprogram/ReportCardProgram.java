@@ -121,8 +121,13 @@ public class ReportCardProgram extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        if(jTable1.getSelectedRow() > -1){
         int selected = jTable1.getSelectedRow();
         ((DefaultTableModel)jTable1.getModel()).removeRow(selected);
+        }
+        else{
+            new RemoveStudent().setVisible(true);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
