@@ -4,6 +4,8 @@
  */
 package reportcardprogram;
 
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author salat5228
@@ -119,7 +121,8 @@ public class ReportCardProgram extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        int selected = jTable1.getSelectedRow();
+        ((DefaultTableModel)jTable1.getModel()).removeRow(selected);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
