@@ -14,12 +14,12 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.NumberFormatter;
 import java.io.*;
-public class AddStudent extends javax.swing.JFrame {
+public class ModifyStudent extends javax.swing.JFrame {
 
     /**
      * Creates new form AddStudent
      */
-    public AddStudent() {
+    public ModifyStudent() {
         initComponents();
     }
 
@@ -57,7 +57,7 @@ public class AddStudent extends javax.swing.JFrame {
 
         Title.setFont(new java.awt.Font("Bauhaus 93", 1, 24)); // NOI18N
         Title.setPreferredSize(new java.awt.Dimension(38, 72));
-        Title.setText("Add Student");
+        Title.setText("Modify Student");
 
         name1.setBackground(new java.awt.Color(204, 204, 204));
         name1.addActionListener(new java.awt.event.ActionListener() {
@@ -308,9 +308,6 @@ public class AddStudent extends javax.swing.JFrame {
     subjectC.getText() + ": " + avgC.getText(),
             subjectD.getText() + ": " + avgD.getText()});
     
-//    File outFile = new File("test.txt");
-//    PrintStream out = new PrintStream(outFile);
-    
     this.dispose();
 
         
@@ -355,7 +352,7 @@ public class AddStudent extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) throws IOException {
+    public static void main(String args[]) {
         /* Set the Nimbus look and feel */
     NumberFormat format = NumberFormat.getInstance();
     NumberFormatter formatter = new NumberFormatter(format);
@@ -385,20 +382,20 @@ public class AddStudent extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AddStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModifyStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AddStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModifyStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AddStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModifyStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AddStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModifyStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AddStudent().setVisible(true);
+                new ModifyStudent().setVisible(true);
             }
         });
     }
@@ -410,18 +407,18 @@ public class AddStudent extends javax.swing.JFrame {
     private java.awt.Label Title4;
     private java.awt.Label Title5;
     private java.awt.Label Title6;
-    public static javax.swing.JTextField avgA;
-    public static javax.swing.JTextField avgB;
-    public static javax.swing.JTextField avgC;
-    public static javax.swing.JTextField avgD;
+    public javax.swing.JTextField avgA;
+    private javax.swing.JTextField avgB;
+    private javax.swing.JTextField avgC;
+    private javax.swing.JTextField avgD;
     private javax.swing.JToggleButton jToggleButton1;
-    public static javax.swing.JTextField name1;
-    public static javax.swing.JTextField name2;
-    public static javax.swing.JTextField studnum1;
-    public static javax.swing.JTextField subjectA;
-    public static javax.swing.JTextField subjectB;
-    public static javax.swing.JTextField subjectC;
-    public static javax.swing.JTextField subjectD;
-    public static javax.swing.JTextField totalAvg;
+    public javax.swing.JTextField name1;
+    public javax.swing.JTextField name2;
+    private javax.swing.JTextField studnum1;
+    private javax.swing.JTextField subjectA;
+    private javax.swing.JTextField subjectB;
+    private javax.swing.JTextField subjectC;
+    private javax.swing.JTextField subjectD;
+    private javax.swing.JTextField totalAvg;
     // End of variables declaration//GEN-END:variables
 }
