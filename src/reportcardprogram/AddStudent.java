@@ -294,7 +294,8 @@ public class AddStudent extends javax.swing.JFrame {
     }//GEN-LAST:event_subjectAActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-   int average;
+ ReportCardProgram.i = ReportCardProgram.i+1;
+        int average;
     int subjectAverageA = Integer.parseInt(avgA.getText());
     int subjectAverageB = Integer.parseInt(avgB.getText());
     int subjectAverageC = Integer.parseInt(avgC.getText());
@@ -303,13 +304,40 @@ public class AddStudent extends javax.swing.JFrame {
     String newAvg = average+" ";
     totalAvg.setText(newAvg);
         DefaultTableModel model = (DefaultTableModel) ReportCardProgram.jTable1.getModel();
-    model.addRow(new Object[]{name2.getText(), name1.getText(), totalAvg.getText(), subjectA.getText() + ": " + avgA.getText(),
+    model.addRow(new Object[]{ReportCardProgram.i,name2.getText(), name1.getText(), totalAvg.getText(), subjectA.getText() + ": " + avgA.getText(),
     subjectB.getText() + ": " + avgB.getText(),
     subjectC.getText() + ": " + avgC.getText(),
             subjectD.getText() + ": " + avgD.getText()});
     
 //    File outFile = new File("test.txt");
 //    PrintStream out = new PrintStream(outFile);
+    
+    // new Arrays for Students
+    int RowID[] = new int[99];
+    int StudentAverageA[] = new int[99];
+    int StudentAverageB[] = new int[99];
+    int StudentAverageC[] = new int[99];
+    int StudentAverageD[] = new int[99];
+    String StudentFirstName[] = new String[99];
+    String StudentLastName[] = new String[99];
+    String StudentNumber[] = new String[99];
+    String StudentSubjectA[] = new String[99];
+    String StudentSubjectB[] = new String[99];
+    String StudentSubjectC[] = new String[99];
+    String StudentSubjectD[] = new String[99];
+   RowID[ReportCardProgram.i]=ReportCardProgram.i;
+   StudentAverageA[ReportCardProgram.i]=subjectAverageA;
+   StudentAverageB[ReportCardProgram.i]=subjectAverageB;
+   StudentAverageC[ReportCardProgram.i]=subjectAverageC;
+   StudentAverageD[ReportCardProgram.i]=subjectAverageD;
+   StudentFirstName[ReportCardProgram.i]=name1.getText();
+   StudentLastName[ReportCardProgram.i]=name2.getText();
+   StudentSubjectA[ReportCardProgram.i]=subjectA.getText();
+   StudentSubjectB[ReportCardProgram.i]=subjectB.getText();
+   StudentSubjectC[ReportCardProgram.i]=subjectC.getText();
+   StudentSubjectD[ReportCardProgram.i]=subjectD.getText();
+   
+    
     
     this.dispose();
 

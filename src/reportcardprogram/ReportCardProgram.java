@@ -19,7 +19,7 @@ public class ReportCardProgram extends javax.swing.JFrame {
     public ReportCardProgram() {
         initComponents();
     }
-
+public static int i = 0;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -47,11 +47,11 @@ public class ReportCardProgram extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Last", "First", "Average", "Subject A", "Subject B", "Subject C", "Subject D"
+                "Row #", "Last", "First", "Average", "Subject A", "Subject B", "Subject C", "Subject D"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
+                true, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -59,13 +59,13 @@ public class ReportCardProgram extends javax.swing.JFrame {
             }
         });
         jScrollPane1.setViewportView(jTable1);
-        jTable1.getColumnModel().getColumn(0).setResizable(false);
         jTable1.getColumnModel().getColumn(1).setResizable(false);
         jTable1.getColumnModel().getColumn(2).setResizable(false);
         jTable1.getColumnModel().getColumn(3).setResizable(false);
         jTable1.getColumnModel().getColumn(4).setResizable(false);
         jTable1.getColumnModel().getColumn(5).setResizable(false);
         jTable1.getColumnModel().getColumn(6).setResizable(false);
+        jTable1.getColumnModel().getColumn(7).setResizable(false);
 
         jButton1.setText("Add Student");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -143,10 +143,16 @@ public class ReportCardProgram extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+
+        if(jTable1.getSelectedRow() > -1){
         int selected = jTable1.getSelectedRow();
+        ((DefaultTableModel)jTable1.getModel()).removeRow(selected);
         ModifyStudent m = new ModifyStudent();
         m.setVisible(true);
-        m.avgA.setText(AddStudent.avgA.toString());
+        }
+        else{
+            new RemoveStudent().setVisible(true);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
