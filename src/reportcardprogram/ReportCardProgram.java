@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-// f
 package reportcardprogram;
 
 import javax.swing.table.DefaultTableModel;
@@ -146,7 +145,6 @@ public class ReportCardProgram extends javax.swing.JFrame {
         int selected = jTable1.getSelectedRow();
         ModifyStudent m = new ModifyStudent();
         m.setVisible(true);
-        
         m.avgA.setText(AddStudent.avgA.toString());
     }//GEN-LAST:event_jButton3ActionPerformed
 
