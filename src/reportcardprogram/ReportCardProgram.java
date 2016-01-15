@@ -33,7 +33,7 @@ public class ReportCardProgram extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jToggleButton1 = new javax.swing.JToggleButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -80,10 +80,10 @@ public class ReportCardProgram extends javax.swing.JFrame {
             }
         });
 
-        jToggleButton1.setText("Modify Student");
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButton3.setText("Modify Student");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
+                jButton3ActionPerformed(evt);
             }
         });
 
@@ -103,7 +103,7 @@ public class ReportCardProgram extends javax.swing.JFrame {
                 .addGap(61, 61, 61)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(78, 78, 78))
@@ -119,7 +119,7 @@ public class ReportCardProgram extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
-                    .addComponent(jToggleButton1))
+                    .addComponent(jButton3))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
@@ -141,12 +141,13 @@ public class ReportCardProgram extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         int selected = jTable1.getSelectedRow();
         ModifyStudent m = new ModifyStudent();
         m.setVisible(true);
-        m.avgA = AddStudent.avgA;
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
+        
+        m.avgA.setText(AddStudent.avgA.toString());
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,8 +187,8 @@ public class ReportCardProgram extends javax.swing.JFrame {
     private java.awt.Label Title;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JScrollPane jScrollPane1;
     public static javax.swing.JTable jTable1;
-    private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }
