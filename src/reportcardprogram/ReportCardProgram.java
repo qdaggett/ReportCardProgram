@@ -20,6 +20,19 @@ public class ReportCardProgram extends javax.swing.JFrame {
         initComponents();
     }
 public static int i = 0;
+public static int f = 0;
+public static int RowID[] = new int[99];
+public static    String StudentAverageA[] = new String[99];
+public static    String StudentAverageB[] = new String[99];
+public static    String StudentAverageC[] = new String[99];
+public static    String StudentAverageD[] = new String[99];
+public static    String StudentFirstName[] = new String[99];
+public static    String StudentLastName[] = new String[99];
+public static    int StudentNumber[] = new int[99];
+public static    String StudentSubjectA[] = new String[99];
+public static    String StudentSubjectB[] = new String[99];
+public static   String StudentSubjectC[] = new String[99];
+public static   String StudentSubjectD[] = new String[99];
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -143,12 +156,27 @@ public static int i = 0;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-
+        
         if(jTable1.getSelectedRow() > -1){
         int selected = jTable1.getSelectedRow();
-        ((DefaultTableModel)jTable1.getModel()).removeRow(selected);
+        int selected2 = jTable1.getSelectedColumn();
         ModifyStudent m = new ModifyStudent();
         m.setVisible(true);
+        Object SelectedRowNumber = (Object) jTable1.getModel().getValueAt(selected, selected2);
+        int L = (Integer) SelectedRowNumber;
+        String newStudentNumber = StudentNumber[L] + " ";
+        m.name1.setText(StudentFirstName[L]);
+        m.name2.setText(StudentLastName[L]);
+        m.studnum1.setText(newStudentNumber);
+        m.subjectA.setText(StudentSubjectA[L]);
+        m.subjectB.setText(StudentSubjectB[L]);
+        m.subjectC.setText(StudentSubjectC[L]);
+        m.subjectD.setText(StudentSubjectD[L]);
+        m.avgA.setText(StudentAverageA[L]);
+        m.avgB.setText(StudentAverageB[L]);
+        m.avgC.setText(StudentAverageC[L]);
+        m.avgD.setText(StudentAverageD[L]);
+        ((DefaultTableModel)jTable1.getModel()).removeRow(selected);
         }
         else{
             new RemoveStudent().setVisible(true);

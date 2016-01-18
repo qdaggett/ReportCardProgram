@@ -300,6 +300,7 @@ public class AddStudent extends javax.swing.JFrame {
     int subjectAverageB = Integer.parseInt(avgB.getText());
     int subjectAverageC = Integer.parseInt(avgC.getText());
     int subjectAverageD = Integer.parseInt(avgD.getText());
+    int studentNumberInteger = Integer.parseInt(studnum1.getText());
     average = (subjectAverageA+subjectAverageB+subjectAverageC+subjectAverageD)/4;
     String newAvg = average+" ";
     totalAvg.setText(newAvg);
@@ -313,29 +314,19 @@ public class AddStudent extends javax.swing.JFrame {
 //    PrintStream out = new PrintStream(outFile);
     
     // new Arrays for Students
-    int RowID[] = new int[99];
-    int StudentAverageA[] = new int[99];
-    int StudentAverageB[] = new int[99];
-    int StudentAverageC[] = new int[99];
-    int StudentAverageD[] = new int[99];
-    String StudentFirstName[] = new String[99];
-    String StudentLastName[] = new String[99];
-    String StudentNumber[] = new String[99];
-    String StudentSubjectA[] = new String[99];
-    String StudentSubjectB[] = new String[99];
-    String StudentSubjectC[] = new String[99];
-    String StudentSubjectD[] = new String[99];
-   RowID[ReportCardProgram.i]=ReportCardProgram.i;
-   StudentAverageA[ReportCardProgram.i]=subjectAverageA;
-   StudentAverageB[ReportCardProgram.i]=subjectAverageB;
-   StudentAverageC[ReportCardProgram.i]=subjectAverageC;
-   StudentAverageD[ReportCardProgram.i]=subjectAverageD;
-   StudentFirstName[ReportCardProgram.i]=name1.getText();
-   StudentLastName[ReportCardProgram.i]=name2.getText();
-   StudentSubjectA[ReportCardProgram.i]=subjectA.getText();
-   StudentSubjectB[ReportCardProgram.i]=subjectB.getText();
-   StudentSubjectC[ReportCardProgram.i]=subjectC.getText();
-   StudentSubjectD[ReportCardProgram.i]=subjectD.getText();
+    
+   ReportCardProgram.RowID[ReportCardProgram.i]=ReportCardProgram.i;
+   ReportCardProgram.StudentAverageA[ReportCardProgram.i]=avgA.getText();
+   ReportCardProgram.StudentAverageB[ReportCardProgram.i]=avgB.getText();
+   ReportCardProgram.StudentAverageC[ReportCardProgram.i]=avgC.getText();
+   ReportCardProgram.StudentAverageD[ReportCardProgram.i]=avgD.getText();
+     ReportCardProgram.StudentNumber[ReportCardProgram.i]=studentNumberInteger;
+   ReportCardProgram.StudentFirstName[ReportCardProgram.i]=name1.getText();
+   ReportCardProgram.StudentLastName[ReportCardProgram.i]=name2.getText();
+   ReportCardProgram.StudentSubjectA[ReportCardProgram.i]=subjectA.getText();
+   ReportCardProgram.StudentSubjectB[ReportCardProgram.i]=subjectB.getText();
+   ReportCardProgram.StudentSubjectC[ReportCardProgram.i]=subjectC.getText();
+   ReportCardProgram.StudentSubjectD[ReportCardProgram.i]=subjectD.getText();
    
     
     

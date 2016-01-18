@@ -303,7 +303,7 @@ public class ModifyStudent extends javax.swing.JFrame {
     String newAvg = average+" ";
     totalAvg.setText(newAvg);
         DefaultTableModel model = (DefaultTableModel) ReportCardProgram.jTable1.getModel();
-    model.addRow(new Object[]{name2.getText(), name1.getText(), totalAvg.getText(), subjectA.getText() + ": " + avgA.getText(),
+    model.addRow(new Object[]{ReportCardProgram.i,name2.getText(), name1.getText(), totalAvg.getText(), subjectA.getText() + ": " + avgA.getText(),
     subjectB.getText() + ": " + avgB.getText(),
     subjectC.getText() + ": " + avgC.getText(),
             subjectD.getText() + ": " + avgD.getText()});
@@ -408,17 +408,17 @@ public class ModifyStudent extends javax.swing.JFrame {
     private java.awt.Label Title5;
     private java.awt.Label Title6;
     public javax.swing.JTextField avgA;
-    private javax.swing.JTextField avgB;
-    private javax.swing.JTextField avgC;
-    private javax.swing.JTextField avgD;
+    public javax.swing.JTextField avgB;
+    public javax.swing.JTextField avgC;
+    public javax.swing.JTextField avgD;
     private javax.swing.JToggleButton jToggleButton1;
     public javax.swing.JTextField name1;
     public javax.swing.JTextField name2;
-    private javax.swing.JTextField studnum1;
-    private javax.swing.JTextField subjectA;
-    private javax.swing.JTextField subjectB;
-    private javax.swing.JTextField subjectC;
-    private javax.swing.JTextField subjectD;
-    private javax.swing.JTextField totalAvg;
+    public javax.swing.JTextField studnum1;
+    public javax.swing.JTextField subjectA;
+    public javax.swing.JTextField subjectB;
+    public javax.swing.JTextField subjectC;
+    public javax.swing.JTextField subjectD;
+    public static javax.swing.JTextField totalAvg;
     // End of variables declaration//GEN-END:variables
 }
