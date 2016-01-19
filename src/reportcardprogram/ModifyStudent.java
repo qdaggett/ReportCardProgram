@@ -14,6 +14,12 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.NumberFormatter;
 import java.io.*;
+import static reportcardprogram.ReportCardProgram.StudentFirstName;
+import static reportcardprogram.ReportCardProgram.StudentLastName;
+import static reportcardprogram.ReportCardProgram.StudentSubjectA;
+import static reportcardprogram.ReportCardProgram.StudentSubjectB;
+import static reportcardprogram.ReportCardProgram.StudentSubjectC;
+import static reportcardprogram.ReportCardProgram.StudentSubjectD;
 public class ModifyStudent extends javax.swing.JFrame {
 
     /**
@@ -22,6 +28,7 @@ public class ModifyStudent extends javax.swing.JFrame {
     public ModifyStudent() {
         initComponents();
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -367,6 +374,7 @@ public class ModifyStudent extends javax.swing.JFrame {
 
     // getValue() always returns something valid
     System.out.println(field.getValue());
+    
     
     
 

@@ -316,10 +316,10 @@ public class AddStudent extends javax.swing.JFrame {
     // new Arrays for Students
     
    ReportCardProgram.RowID[ReportCardProgram.i]=ReportCardProgram.i;
-   ReportCardProgram.StudentAverageA[ReportCardProgram.i]=avgA.getText();
-   ReportCardProgram.StudentAverageB[ReportCardProgram.i]=avgB.getText();
-   ReportCardProgram.StudentAverageC[ReportCardProgram.i]=avgC.getText();
-   ReportCardProgram.StudentAverageD[ReportCardProgram.i]=avgD.getText();
+   ReportCardProgram.StudentAverageA[ReportCardProgram.i]=subjectAverageA;
+   ReportCardProgram.StudentAverageB[ReportCardProgram.i]=subjectAverageB;
+   ReportCardProgram.StudentAverageC[ReportCardProgram.i]=subjectAverageC;
+   ReportCardProgram.StudentAverageD[ReportCardProgram.i]=subjectAverageD;
      ReportCardProgram.StudentNumber[ReportCardProgram.i]=studentNumberInteger;
    ReportCardProgram.StudentFirstName[ReportCardProgram.i]=name1.getText();
    ReportCardProgram.StudentLastName[ReportCardProgram.i]=name2.getText();
