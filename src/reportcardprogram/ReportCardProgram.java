@@ -44,10 +44,10 @@ public static   String StudentSubjectD[] = new String[99];
 
         Title = new java.awt.Label();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        tblInfo = new javax.swing.JTable();
+        btnAddStudent = new javax.swing.JButton();
+        btnModStudent = new javax.swing.JButton();
+        btnDelStudent = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,7 +55,7 @@ public static   String StudentSubjectD[] = new String[99];
         Title.setPreferredSize(new java.awt.Dimension(38, 72));
         Title.setText("Report Card Pro");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblInfo.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -71,33 +71,33 @@ public static   String StudentSubjectD[] = new String[99];
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
-        jTable1.getColumnModel().getColumn(1).setResizable(false);
-        jTable1.getColumnModel().getColumn(2).setResizable(false);
-        jTable1.getColumnModel().getColumn(3).setResizable(false);
-        jTable1.getColumnModel().getColumn(4).setResizable(false);
-        jTable1.getColumnModel().getColumn(5).setResizable(false);
-        jTable1.getColumnModel().getColumn(6).setResizable(false);
-        jTable1.getColumnModel().getColumn(7).setResizable(false);
+        jScrollPane1.setViewportView(tblInfo);
+        tblInfo.getColumnModel().getColumn(1).setResizable(false);
+        tblInfo.getColumnModel().getColumn(2).setResizable(false);
+        tblInfo.getColumnModel().getColumn(3).setResizable(false);
+        tblInfo.getColumnModel().getColumn(4).setResizable(false);
+        tblInfo.getColumnModel().getColumn(5).setResizable(false);
+        tblInfo.getColumnModel().getColumn(6).setResizable(false);
+        tblInfo.getColumnModel().getColumn(7).setResizable(false);
 
-        jButton1.setText("Add Student");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnAddStudent.setText("Add Student");
+        btnAddStudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnAddStudentActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Remove Student");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnModStudent.setText("Remove Student");
+        btnModStudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnModStudentActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Modify Student");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnDelStudent.setText("Modify Student");
+        btnDelStudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnDelStudentActionPerformed(evt);
             }
         });
 
@@ -115,11 +115,11 @@ public static   String StudentSubjectD[] = new String[99];
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(61, 61, 61)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnAddStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnDelStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnModStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(78, 78, 78))
         );
         layout.setVerticalGroup(
@@ -131,47 +131,47 @@ public static   String StudentSubjectD[] = new String[99];
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 495, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(btnAddStudent)
+                    .addComponent(btnModStudent)
+                    .addComponent(btnDelStudent))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnAddStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddStudentActionPerformed
         AddStudent s = new AddStudent();
         s.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnAddStudentActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        if(jTable1.getSelectedRow() > -1){
-        int selected = jTable1.getSelectedRow();
-        ((DefaultTableModel)jTable1.getModel()).removeRow(selected);
+    private void btnModStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModStudentActionPerformed
+        if(tblInfo.getSelectedRow() > -1){
+        int selected = tblInfo.getSelectedRow();
+        ((DefaultTableModel)tblInfo.getModel()).removeRow(selected);
         }
         else{
             new RemoveStudent().setVisible(true);
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnModStudentActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnDelStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDelStudentActionPerformed
         
-        if(jTable1.getSelectedRow() > -1){
-        int selected = jTable1.getSelectedRow();
-        int selected2 = jTable1.getSelectedColumn();
+        if(tblInfo.getSelectedRow() > -1){
+        int selected = tblInfo.getSelectedRow();
+        int selected2 = tblInfo.getSelectedColumn();
         ModifyStudent m = new ModifyStudent();
         m.setVisible(true);
-        Object SelectedRowNumber = (Object) jTable1.getModel().getValueAt(selected, selected2);
+        Object SelectedRowNumber = (Object) tblInfo.getModel().getValueAt(selected, selected2);
         int L = (Integer) SelectedRowNumber;
         String newStudentNumber = StudentNumber[L] + " ";
         String newAverageA = StudentAverageA[L]+ " ";
         String newAverageB = StudentAverageB[L]+ " ";
         String newAverageC = StudentAverageC[L]+ " ";
         String newAverageD = StudentAverageD[L]+ " ";
-        m.name1.setText(StudentFirstName[L]);
-        m.name2.setText(StudentLastName[L]);
-        m.studnum1.setText(newStudentNumber);
+        m.txtFName.setText(StudentFirstName[L]);
+        m.txtLName.setText(StudentLastName[L]);
+        m.txtNumber.setText(newStudentNumber);
         m.subjectA.setText(StudentSubjectA[L]);
         m.subjectB.setText(StudentSubjectB[L]);
         m.subjectC.setText(StudentSubjectC[L]);
@@ -180,12 +180,12 @@ public static   String StudentSubjectD[] = new String[99];
         m.avgB.setText(newAverageB);
         m.avgC.setText(newAverageC);
         m.avgD.setText(newAverageD);
-        ((DefaultTableModel)jTable1.getModel()).removeRow(selected);
+        ((DefaultTableModel)tblInfo.getModel()).removeRow(selected);
         }
         else{
             new RemoveStudent().setVisible(true);
         }
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnDelStudentActionPerformed
 
     /**
      * @param args the command line arguments
@@ -223,10 +223,10 @@ public static   String StudentSubjectD[] = new String[99];
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Label Title;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnAddStudent;
+    private javax.swing.JButton btnDelStudent;
+    private javax.swing.JButton btnModStudent;
     private javax.swing.JScrollPane jScrollPane1;
-    public static javax.swing.JTable jTable1;
+    public static javax.swing.JTable tblInfo;
     // End of variables declaration//GEN-END:variables
 }

@@ -32,146 +32,146 @@ public class AddStudent extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Title = new java.awt.Label();
-        name1 = new javax.swing.JTextField();
-        Title6 = new java.awt.Label();
-        name2 = new javax.swing.JTextField();
-        studnum1 = new javax.swing.JTextField();
-        Title1 = new java.awt.Label();
-        Title2 = new java.awt.Label();
-        Title3 = new java.awt.Label();
-        subjectA = new javax.swing.JTextField();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        Title4 = new java.awt.Label();
-        Title5 = new java.awt.Label();
-        totalAvg = new javax.swing.JTextField();
-        subjectC = new javax.swing.JTextField();
-        subjectB = new javax.swing.JTextField();
-        subjectD = new javax.swing.JTextField();
-        avgA = new javax.swing.JTextField();
-        avgC = new javax.swing.JTextField();
-        avgB = new javax.swing.JTextField();
-        avgD = new javax.swing.JTextField();
+        lblTitle = new java.awt.Label();
+        txtFName = new javax.swing.JTextField();
+        lblLName = new java.awt.Label();
+        txtLName = new javax.swing.JTextField();
+        txtNumber = new javax.swing.JTextField();
+        lblFName = new java.awt.Label();
+        lblTotalAvg = new java.awt.Label();
+        lblAvg = new java.awt.Label();
+        txtSubjectA = new javax.swing.JTextField();
+        btnConfirm = new javax.swing.JToggleButton();
+        lblNumber = new java.awt.Label();
+        lblSubject = new java.awt.Label();
+        txtTotalAvg = new javax.swing.JTextField();
+        txtSubjectC = new javax.swing.JTextField();
+        txtSubjectB = new javax.swing.JTextField();
+        txtSubjectD = new javax.swing.JTextField();
+        txtAvgA = new javax.swing.JTextField();
+        txtAvgC = new javax.swing.JTextField();
+        txtAvgB = new javax.swing.JTextField();
+        txtAvgD = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        Title.setFont(new java.awt.Font("Bauhaus 93", 1, 24)); // NOI18N
-        Title.setPreferredSize(new java.awt.Dimension(38, 72));
-        Title.setText("Add Student");
+        lblTitle.setFont(new java.awt.Font("Bauhaus 93", 1, 24)); // NOI18N
+        lblTitle.setPreferredSize(new java.awt.Dimension(38, 72));
+        lblTitle.setText("Add Student");
 
-        name1.setBackground(new java.awt.Color(204, 204, 204));
-        name1.addActionListener(new java.awt.event.ActionListener() {
+        txtFName.setBackground(new java.awt.Color(204, 204, 204));
+        txtFName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                name1ActionPerformed(evt);
+                txtFNameActionPerformed(evt);
             }
         });
 
-        Title6.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
-        Title6.setPreferredSize(new java.awt.Dimension(38, 72));
-        Title6.setText("Last Name");
+        lblLName.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        lblLName.setPreferredSize(new java.awt.Dimension(38, 72));
+        lblLName.setText("Last Name");
 
-        name2.setBackground(new java.awt.Color(204, 204, 204));
-        name2.addActionListener(new java.awt.event.ActionListener() {
+        txtLName.setBackground(new java.awt.Color(204, 204, 204));
+        txtLName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                name2ActionPerformed(evt);
+                txtLNameActionPerformed(evt);
             }
         });
 
-        studnum1.setBackground(new java.awt.Color(204, 204, 204));
-        studnum1.addActionListener(new java.awt.event.ActionListener() {
+        txtNumber.setBackground(new java.awt.Color(204, 204, 204));
+        txtNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                studnum1ActionPerformed(evt);
+                txtNumberActionPerformed(evt);
             }
         });
 
-        Title1.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
-        Title1.setPreferredSize(new java.awt.Dimension(38, 72));
-        Title1.setText("First Name");
+        lblFName.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        lblFName.setPreferredSize(new java.awt.Dimension(38, 72));
+        lblFName.setText("First Name");
 
-        Title2.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
-        Title2.setPreferredSize(new java.awt.Dimension(38, 72));
-        Title2.setText("Total Average:");
+        lblTotalAvg.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        lblTotalAvg.setPreferredSize(new java.awt.Dimension(38, 72));
+        lblTotalAvg.setText("Total Average:");
 
-        Title3.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
-        Title3.setPreferredSize(new java.awt.Dimension(38, 72));
-        Title3.setText("Average");
+        lblAvg.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        lblAvg.setPreferredSize(new java.awt.Dimension(38, 72));
+        lblAvg.setText("Average");
 
-        subjectA.setBackground(new java.awt.Color(204, 204, 204));
-        subjectA.addActionListener(new java.awt.event.ActionListener() {
+        txtSubjectA.setBackground(new java.awt.Color(204, 204, 204));
+        txtSubjectA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                subjectAActionPerformed(evt);
+                txtSubjectAActionPerformed(evt);
             }
         });
 
-        jToggleButton1.setText("Input Student");
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnConfirm.setText("Input Student");
+        btnConfirm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
+                btnConfirmActionPerformed(evt);
             }
         });
 
-        Title4.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
-        Title4.setPreferredSize(new java.awt.Dimension(38, 72));
-        Title4.setText("Number");
+        lblNumber.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        lblNumber.setPreferredSize(new java.awt.Dimension(38, 72));
+        lblNumber.setText("Number");
 
-        Title5.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
-        Title5.setPreferredSize(new java.awt.Dimension(38, 72));
-        Title5.setText("Subject");
+        lblSubject.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        lblSubject.setPreferredSize(new java.awt.Dimension(38, 72));
+        lblSubject.setText("Subject");
 
-        totalAvg.setEditable(false);
-        totalAvg.setBackground(new java.awt.Color(204, 204, 204));
-        totalAvg.addActionListener(new java.awt.event.ActionListener() {
+        txtTotalAvg.setEditable(false);
+        txtTotalAvg.setBackground(new java.awt.Color(204, 204, 204));
+        txtTotalAvg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                totalAvgActionPerformed(evt);
+                txtTotalAvgActionPerformed(evt);
             }
         });
 
-        subjectC.setBackground(new java.awt.Color(204, 204, 204));
-        subjectC.addActionListener(new java.awt.event.ActionListener() {
+        txtSubjectC.setBackground(new java.awt.Color(204, 204, 204));
+        txtSubjectC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                subjectCActionPerformed(evt);
+                txtSubjectCActionPerformed(evt);
             }
         });
 
-        subjectB.setBackground(new java.awt.Color(204, 204, 204));
-        subjectB.addActionListener(new java.awt.event.ActionListener() {
+        txtSubjectB.setBackground(new java.awt.Color(204, 204, 204));
+        txtSubjectB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                subjectBActionPerformed(evt);
+                txtSubjectBActionPerformed(evt);
             }
         });
 
-        subjectD.setBackground(new java.awt.Color(204, 204, 204));
-        subjectD.addActionListener(new java.awt.event.ActionListener() {
+        txtSubjectD.setBackground(new java.awt.Color(204, 204, 204));
+        txtSubjectD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                subjectDActionPerformed(evt);
+                txtSubjectDActionPerformed(evt);
             }
         });
 
-        avgA.setBackground(new java.awt.Color(204, 204, 204));
-        avgA.addActionListener(new java.awt.event.ActionListener() {
+        txtAvgA.setBackground(new java.awt.Color(204, 204, 204));
+        txtAvgA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                avgAActionPerformed(evt);
+                txtAvgAActionPerformed(evt);
             }
         });
 
-        avgC.setBackground(new java.awt.Color(204, 204, 204));
-        avgC.addActionListener(new java.awt.event.ActionListener() {
+        txtAvgC.setBackground(new java.awt.Color(204, 204, 204));
+        txtAvgC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                avgCActionPerformed(evt);
+                txtAvgCActionPerformed(evt);
             }
         });
 
-        avgB.setBackground(new java.awt.Color(204, 204, 204));
-        avgB.addActionListener(new java.awt.event.ActionListener() {
+        txtAvgB.setBackground(new java.awt.Color(204, 204, 204));
+        txtAvgB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                avgBActionPerformed(evt);
+                txtAvgBActionPerformed(evt);
             }
         });
 
-        avgD.setBackground(new java.awt.Color(204, 204, 204));
-        avgD.addActionListener(new java.awt.event.ActionListener() {
+        txtAvgD.setBackground(new java.awt.Color(204, 204, 204));
+        txtAvgD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                avgDActionPerformed(evt);
+                txtAvgDActionPerformed(evt);
             }
         });
 
@@ -185,130 +185,130 @@ public class AddStudent extends javax.swing.JFrame {
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(Title2, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblTotalAvg, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(19, 19, 19)
-                                .addComponent(totalAvg, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtTotalAvg, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Title5, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Title3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(lblSubject, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblAvg, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(20, 20, 20)
-                                        .addComponent(avgA, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtAvgA, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(subjectA, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(txtSubjectA, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jToggleButton1, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnConfirm, javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(subjectB, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtSubjectB, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(10, 10, 10)
-                                        .addComponent(avgB, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(txtAvgB, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(10, 10, 10)
-                                        .addComponent(avgC, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(subjectC, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtAvgC, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtSubjectC, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(10, 10, 10)
-                                        .addComponent(avgD, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(subjectD, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(txtAvgD, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtSubjectD, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(Title, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Title1, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Title4, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Title6, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblFName, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblLName, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(studnum1, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(name1, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(name2, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txtNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtFName, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtLName, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Title1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(name1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblFName, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtFName, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Title6, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(name2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblLName, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtLName, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Title4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(studnum1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Title5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSubject, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(subjectA, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(subjectB, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(subjectC, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(subjectD, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtSubjectA, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtSubjectB, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtSubjectC, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtSubjectD, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Title3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblAvg, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(avgA, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(avgB, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(avgC, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(avgD, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtAvgA, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtAvgB, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtAvgC, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtAvgD, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Title2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(totalAvg, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblTotalAvg, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTotalAvg, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(34, 34, 34)
-                .addComponent(jToggleButton1)
+                .addComponent(btnConfirm)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void name1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_name1ActionPerformed
+    private void txtFNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_name1ActionPerformed
+    }//GEN-LAST:event_txtFNameActionPerformed
 
-    private void studnum1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studnum1ActionPerformed
+    private void txtNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumberActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_studnum1ActionPerformed
+    }//GEN-LAST:event_txtNumberActionPerformed
 
-    private void subjectAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectAActionPerformed
+    private void txtSubjectAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSubjectAActionPerformed
 
-    }//GEN-LAST:event_subjectAActionPerformed
+    }//GEN-LAST:event_txtSubjectAActionPerformed
 
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+    private void btnConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmActionPerformed
  ReportCardProgram.i = ReportCardProgram.i+1;
         int average;
-    int subjectAverageA = Integer.parseInt(avgA.getText());
-    int subjectAverageB = Integer.parseInt(avgB.getText());
-    int subjectAverageC = Integer.parseInt(avgC.getText());
-    int subjectAverageD = Integer.parseInt(avgD.getText());
-    int studentNumberInteger = Integer.parseInt(studnum1.getText());
+    int subjectAverageA = Integer.parseInt(txtAvgA.getText());
+    int subjectAverageB = Integer.parseInt(txtAvgB.getText());
+    int subjectAverageC = Integer.parseInt(txtAvgC.getText());
+    int subjectAverageD = Integer.parseInt(txtAvgD.getText());
+    int studentNumberInteger = Integer.parseInt(txtNumber.getText());
     average = (subjectAverageA+subjectAverageB+subjectAverageC+subjectAverageD)/4;
     String newAvg = average+" ";
-    totalAvg.setText(newAvg);
-        DefaultTableModel model = (DefaultTableModel) ReportCardProgram.jTable1.getModel();
-    model.addRow(new Object[]{ReportCardProgram.i,name2.getText(), name1.getText(), totalAvg.getText(), subjectA.getText() + ": " + avgA.getText(),
-    subjectB.getText() + ": " + avgB.getText(),
-    subjectC.getText() + ": " + avgC.getText(),
-            subjectD.getText() + ": " + avgD.getText()});
+    txtTotalAvg.setText(newAvg);
+        DefaultTableModel model = (DefaultTableModel) ReportCardProgram.tblInfo.getModel();
+    model.addRow(new Object[]{ReportCardProgram.i,txtLName.getText(), txtFName.getText(), txtTotalAvg.getText(), txtSubjectA.getText() + ": " + txtAvgA.getText(),
+    txtSubjectB.getText() + ": " + txtAvgB.getText(),
+    txtSubjectC.getText() + ": " + txtAvgC.getText(),
+            txtSubjectD.getText() + ": " + txtAvgD.getText()});
     
 //    File outFile = new File("test.txt");
 //    PrintStream out = new PrintStream(outFile);
@@ -321,55 +321,55 @@ public class AddStudent extends javax.swing.JFrame {
    ReportCardProgram.StudentAverageC[ReportCardProgram.i]=subjectAverageC;
    ReportCardProgram.StudentAverageD[ReportCardProgram.i]=subjectAverageD;
      ReportCardProgram.StudentNumber[ReportCardProgram.i]=studentNumberInteger;
-   ReportCardProgram.StudentFirstName[ReportCardProgram.i]=name1.getText();
-   ReportCardProgram.StudentLastName[ReportCardProgram.i]=name2.getText();
-   ReportCardProgram.StudentSubjectA[ReportCardProgram.i]=subjectA.getText();
-   ReportCardProgram.StudentSubjectB[ReportCardProgram.i]=subjectB.getText();
-   ReportCardProgram.StudentSubjectC[ReportCardProgram.i]=subjectC.getText();
-   ReportCardProgram.StudentSubjectD[ReportCardProgram.i]=subjectD.getText();
+   ReportCardProgram.StudentFirstName[ReportCardProgram.i]=txtFName.getText();
+   ReportCardProgram.StudentLastName[ReportCardProgram.i]=txtLName.getText();
+   ReportCardProgram.StudentSubjectA[ReportCardProgram.i]=txtSubjectA.getText();
+   ReportCardProgram.StudentSubjectB[ReportCardProgram.i]=txtSubjectB.getText();
+   ReportCardProgram.StudentSubjectC[ReportCardProgram.i]=txtSubjectC.getText();
+   ReportCardProgram.StudentSubjectD[ReportCardProgram.i]=txtSubjectD.getText();
    
     
     
     this.dispose();
 
         
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
+    }//GEN-LAST:event_btnConfirmActionPerformed
 
-    private void totalAvgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalAvgActionPerformed
+    private void txtTotalAvgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalAvgActionPerformed
     
-    }//GEN-LAST:event_totalAvgActionPerformed
+    }//GEN-LAST:event_txtTotalAvgActionPerformed
 
-    private void subjectCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectCActionPerformed
+    private void txtSubjectCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSubjectCActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_subjectCActionPerformed
+    }//GEN-LAST:event_txtSubjectCActionPerformed
 
-    private void subjectBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectBActionPerformed
+    private void txtSubjectBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSubjectBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_subjectBActionPerformed
+    }//GEN-LAST:event_txtSubjectBActionPerformed
 
-    private void subjectDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectDActionPerformed
+    private void txtSubjectDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSubjectDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_subjectDActionPerformed
+    }//GEN-LAST:event_txtSubjectDActionPerformed
 
-    private void avgAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avgAActionPerformed
+    private void txtAvgAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAvgAActionPerformed
 
-    }//GEN-LAST:event_avgAActionPerformed
+    }//GEN-LAST:event_txtAvgAActionPerformed
 
-    private void avgCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avgCActionPerformed
+    private void txtAvgCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAvgCActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_avgCActionPerformed
+    }//GEN-LAST:event_txtAvgCActionPerformed
 
-    private void avgBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avgBActionPerformed
+    private void txtAvgBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAvgBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_avgBActionPerformed
+    }//GEN-LAST:event_txtAvgBActionPerformed
 
-    private void avgDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_avgDActionPerformed
+    private void txtAvgDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAvgDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_avgDActionPerformed
+    }//GEN-LAST:event_txtAvgDActionPerformed
 
-    private void name2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_name2ActionPerformed
+    private void txtLNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_name2ActionPerformed
+    }//GEN-LAST:event_txtLNameActionPerformed
 
     /**
      * @param args the command line arguments
@@ -422,25 +422,25 @@ public class AddStudent extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Label Title;
-    private java.awt.Label Title1;
-    private java.awt.Label Title2;
-    private java.awt.Label Title3;
-    private java.awt.Label Title4;
-    private java.awt.Label Title5;
-    private java.awt.Label Title6;
-    public static javax.swing.JTextField avgA;
-    public static javax.swing.JTextField avgB;
-    public static javax.swing.JTextField avgC;
-    public static javax.swing.JTextField avgD;
-    private javax.swing.JToggleButton jToggleButton1;
-    public static javax.swing.JTextField name1;
-    public static javax.swing.JTextField name2;
-    public static javax.swing.JTextField studnum1;
-    public static javax.swing.JTextField subjectA;
-    public static javax.swing.JTextField subjectB;
-    public static javax.swing.JTextField subjectC;
-    public static javax.swing.JTextField subjectD;
-    public static javax.swing.JTextField totalAvg;
+    private javax.swing.JToggleButton btnConfirm;
+    private java.awt.Label lblAvg;
+    private java.awt.Label lblFName;
+    private java.awt.Label lblLName;
+    private java.awt.Label lblNumber;
+    private java.awt.Label lblSubject;
+    private java.awt.Label lblTitle;
+    private java.awt.Label lblTotalAvg;
+    public static javax.swing.JTextField txtAvgA;
+    public static javax.swing.JTextField txtAvgB;
+    public static javax.swing.JTextField txtAvgC;
+    public static javax.swing.JTextField txtAvgD;
+    public static javax.swing.JTextField txtFName;
+    public static javax.swing.JTextField txtLName;
+    public static javax.swing.JTextField txtNumber;
+    public static javax.swing.JTextField txtSubjectA;
+    public static javax.swing.JTextField txtSubjectB;
+    public static javax.swing.JTextField txtSubjectC;
+    public static javax.swing.JTextField txtSubjectD;
+    public static javax.swing.JTextField txtTotalAvg;
     // End of variables declaration//GEN-END:variables
 }

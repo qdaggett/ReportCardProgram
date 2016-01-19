@@ -40,10 +40,10 @@ public class ModifyStudent extends javax.swing.JFrame {
     private void initComponents() {
 
         Title = new java.awt.Label();
-        name1 = new javax.swing.JTextField();
+        txtFName = new javax.swing.JTextField();
         Title6 = new java.awt.Label();
-        name2 = new javax.swing.JTextField();
-        studnum1 = new javax.swing.JTextField();
+        txtLName = new javax.swing.JTextField();
+        txtNumber = new javax.swing.JTextField();
         Title1 = new java.awt.Label();
         Title2 = new java.awt.Label();
         Title3 = new java.awt.Label();
@@ -66,10 +66,10 @@ public class ModifyStudent extends javax.swing.JFrame {
         Title.setPreferredSize(new java.awt.Dimension(38, 72));
         Title.setText("Modify Student");
 
-        name1.setBackground(new java.awt.Color(204, 204, 204));
-        name1.addActionListener(new java.awt.event.ActionListener() {
+        txtFName.setBackground(new java.awt.Color(204, 204, 204));
+        txtFName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                name1ActionPerformed(evt);
+                txtFNameActionPerformed(evt);
             }
         });
 
@@ -77,17 +77,17 @@ public class ModifyStudent extends javax.swing.JFrame {
         Title6.setPreferredSize(new java.awt.Dimension(38, 72));
         Title6.setText("Last Name");
 
-        name2.setBackground(new java.awt.Color(204, 204, 204));
-        name2.addActionListener(new java.awt.event.ActionListener() {
+        txtLName.setBackground(new java.awt.Color(204, 204, 204));
+        txtLName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                name2ActionPerformed(evt);
+                txtLNameActionPerformed(evt);
             }
         });
 
-        studnum1.setBackground(new java.awt.Color(204, 204, 204));
-        studnum1.addActionListener(new java.awt.event.ActionListener() {
+        txtNumber.setBackground(new java.awt.Color(204, 204, 204));
+        txtNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                studnum1ActionPerformed(evt);
+                txtNumberActionPerformed(evt);
             }
         });
 
@@ -238,9 +238,9 @@ public class ModifyStudent extends javax.swing.JFrame {
                             .addComponent(Title6, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(studnum1, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(name1, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(name2, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txtNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtFName, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtLName, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -251,15 +251,15 @@ public class ModifyStudent extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Title1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(name1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtFName, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Title6, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(name2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtLName, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Title4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(studnum1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Title5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -288,13 +288,13 @@ public class ModifyStudent extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void name1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_name1ActionPerformed
+    private void txtFNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_name1ActionPerformed
+    }//GEN-LAST:event_txtFNameActionPerformed
 
-    private void studnum1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studnum1ActionPerformed
+    private void txtNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumberActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_studnum1ActionPerformed
+    }//GEN-LAST:event_txtNumberActionPerformed
 
     private void subjectAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectAActionPerformed
 
@@ -309,8 +309,8 @@ public class ModifyStudent extends javax.swing.JFrame {
     average = (subjectAverageA+subjectAverageB+subjectAverageC+subjectAverageD)/4;
     String newAvg = average+" ";
     totalAvg.setText(newAvg);
-        DefaultTableModel model = (DefaultTableModel) ReportCardProgram.jTable1.getModel();
-    model.addRow(new Object[]{ReportCardProgram.i,name2.getText(), name1.getText(), totalAvg.getText(), subjectA.getText() + ": " + avgA.getText(),
+        DefaultTableModel model = (DefaultTableModel) ReportCardProgram.tblInfo.getModel();
+    model.addRow(new Object[]{ReportCardProgram.i,txtLName.getText(), txtFName.getText(), totalAvg.getText(), subjectA.getText() + ": " + avgA.getText(),
     subjectB.getText() + ": " + avgB.getText(),
     subjectC.getText() + ": " + avgC.getText(),
             subjectD.getText() + ": " + avgD.getText()});
@@ -352,9 +352,9 @@ public class ModifyStudent extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_avgDActionPerformed
 
-    private void name2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_name2ActionPerformed
+    private void txtLNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_name2ActionPerformed
+    }//GEN-LAST:event_txtLNameActionPerformed
 
     /**
      * @param args the command line arguments
@@ -420,13 +420,13 @@ public class ModifyStudent extends javax.swing.JFrame {
     public javax.swing.JTextField avgC;
     public javax.swing.JTextField avgD;
     private javax.swing.JToggleButton jToggleButton1;
-    public javax.swing.JTextField name1;
-    public javax.swing.JTextField name2;
-    public javax.swing.JTextField studnum1;
     public javax.swing.JTextField subjectA;
     public javax.swing.JTextField subjectB;
     public javax.swing.JTextField subjectC;
     public javax.swing.JTextField subjectD;
     public static javax.swing.JTextField totalAvg;
+    public javax.swing.JTextField txtFName;
+    public javax.swing.JTextField txtLName;
+    public javax.swing.JTextField txtNumber;
     // End of variables declaration//GEN-END:variables
 }

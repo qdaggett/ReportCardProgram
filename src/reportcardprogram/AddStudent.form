@@ -29,73 +29,73 @@
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="Title2" min="-2" pref="102" max="-2" attributes="0"/>
+                              <Component id="lblTotalAvg" min="-2" pref="102" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="totalAvg" min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="txtTotalAvg" min="-2" pref="44" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="Title5" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
-                                  <Component id="Title3" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="lblSubject" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="lblAvg" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                      <Component id="avgA" min="-2" pref="43" max="-2" attributes="0"/>
+                                      <Component id="txtAvgA" min="-2" pref="43" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="subjectA" min="-2" pref="66" max="-2" attributes="0"/>
+                                      <Component id="txtSubjectA" min="-2" pref="66" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jToggleButton1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnConfirm" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="subjectB" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <Component id="txtSubjectB" min="-2" pref="66" max="-2" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                      <Component id="avgB" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <Component id="txtAvgB" min="-2" pref="44" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                      <Component id="avgC" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <Component id="txtAvgC" min="-2" pref="44" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="subjectC" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <Component id="txtSubjectC" min="-2" pref="66" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                      <Component id="avgD" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <Component id="txtAvgD" min="-2" pref="44" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="subjectD" min="-2" pref="66" max="-2" attributes="0"/>
+                                  <Component id="txtSubjectD" min="-2" pref="66" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Title" min="-2" pref="206" max="-2" attributes="0"/>
+                      <Component id="lblTitle" min="-2" pref="206" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="Title1" min="-2" pref="102" max="-2" attributes="0"/>
-                          <Component id="Title4" min="-2" pref="102" max="-2" attributes="0"/>
-                          <Component id="Title6" min="-2" pref="102" max="-2" attributes="0"/>
+                          <Component id="lblFName" min="-2" pref="102" max="-2" attributes="0"/>
+                          <Component id="lblNumber" min="-2" pref="102" max="-2" attributes="0"/>
+                          <Component id="lblLName" min="-2" pref="102" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="studnum1" min="-2" pref="162" max="-2" attributes="0"/>
-                          <Component id="name1" min="-2" pref="162" max="-2" attributes="0"/>
-                          <Component id="name2" min="-2" pref="162" max="-2" attributes="0"/>
+                          <Component id="txtNumber" min="-2" pref="162" max="-2" attributes="0"/>
+                          <Component id="txtFName" min="-2" pref="162" max="-2" attributes="0"/>
+                          <Component id="txtLName" min="-2" pref="162" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -107,56 +107,56 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="Title" min="-2" max="-2" attributes="0"/>
+              <Component id="lblTitle" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="Title1" min="-2" pref="34" max="-2" attributes="0"/>
-                  <Component id="name1" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="lblFName" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="txtFName" min="-2" pref="34" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="Title6" min="-2" pref="34" max="-2" attributes="0"/>
-                  <Component id="name2" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="lblLName" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="txtLName" min="-2" pref="34" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="Title4" min="-2" pref="34" max="-2" attributes="0"/>
-                  <Component id="studnum1" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="lblNumber" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="txtNumber" min="-2" pref="34" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="Title5" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="lblSubject" min="-2" pref="34" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="subjectA" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="subjectB" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="subjectC" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="subjectD" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="txtSubjectA" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="txtSubjectB" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="txtSubjectC" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="txtSubjectD" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="Title3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="lblAvg" min="-2" pref="34" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="avgA" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="avgB" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="avgC" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="avgD" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="txtAvgA" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="txtAvgB" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="txtAvgC" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="txtAvgD" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="Title2" min="-2" pref="34" max="-2" attributes="0"/>
-                  <Component id="totalAvg" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="lblTotalAvg" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="txtTotalAvg" min="-2" pref="34" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-              <Component id="jToggleButton1" min="-2" max="-2" attributes="0"/>
+              <Component id="btnConfirm" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="java.awt.Label" name="Title">
+    <Component class="java.awt.Label" name="lblTitle">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Bauhaus 93" size="24" style="1"/>
@@ -169,20 +169,20 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="name1">
+    <Component class="javax.swing.JTextField" name="txtFName">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="name1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFNameActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="java.awt.Label" name="Title6">
+    <Component class="java.awt.Label" name="lblLName">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial Black" size="12" style="1"/>
@@ -195,33 +195,33 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="name2">
+    <Component class="javax.swing.JTextField" name="txtLName">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="name2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLNameActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="studnum1">
+    <Component class="javax.swing.JTextField" name="txtNumber">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="studnum1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNumberActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="java.awt.Label" name="Title1">
+    <Component class="java.awt.Label" name="lblFName">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial Black" size="12" style="1"/>
@@ -234,7 +234,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="java.awt.Label" name="Title2">
+    <Component class="java.awt.Label" name="lblTotalAvg">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial Black" size="12" style="1"/>
@@ -247,7 +247,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="java.awt.Label" name="Title3">
+    <Component class="java.awt.Label" name="lblAvg">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial Black" size="12" style="0"/>
@@ -260,30 +260,30 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="subjectA">
+    <Component class="javax.swing.JTextField" name="txtSubjectA">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="subjectAActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSubjectAActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton1">
+    <Component class="javax.swing.JToggleButton" name="btnConfirm">
       <Properties>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
           <Connection code="&quot;Input Student&quot;" type="code"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnConfirmActionPerformed"/>
       </Events>
     </Component>
-    <Component class="java.awt.Label" name="Title4">
+    <Component class="java.awt.Label" name="lblNumber">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial Black" size="12" style="1"/>
@@ -296,7 +296,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="java.awt.Label" name="Title5">
+    <Component class="java.awt.Label" name="lblSubject">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial Black" size="12" style="0"/>
@@ -309,7 +309,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="totalAvg">
+    <Component class="javax.swing.JTextField" name="txtTotalAvg">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -317,98 +317,98 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="totalAvgActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTotalAvgActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="subjectC">
+    <Component class="javax.swing.JTextField" name="txtSubjectC">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="subjectCActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSubjectCActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="subjectB">
+    <Component class="javax.swing.JTextField" name="txtSubjectB">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="subjectBActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSubjectBActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="subjectD">
+    <Component class="javax.swing.JTextField" name="txtSubjectD">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="subjectDActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSubjectDActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="avgA">
+    <Component class="javax.swing.JTextField" name="txtAvgA">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="avgAActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAvgAActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="avgC">
+    <Component class="javax.swing.JTextField" name="txtAvgC">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="avgCActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAvgCActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="avgB">
+    <Component class="javax.swing.JTextField" name="txtAvgB">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="avgBActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAvgBActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="avgD">
+    <Component class="javax.swing.JTextField" name="txtAvgD">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="avgDActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAvgDActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
