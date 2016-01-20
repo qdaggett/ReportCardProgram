@@ -33,6 +33,7 @@ public static    String StudentSubjectA[] = new String[99];
 public static    String StudentSubjectB[] = new String[99];
 public static   String StudentSubjectC[] = new String[99];
 public static   String StudentSubjectD[] = new String[99];
+public static String StudentTotalAvg[] = new String[99];
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -159,27 +160,27 @@ public static   String StudentSubjectD[] = new String[99];
         
         if(tblInfo.getSelectedRow() > -1){
         int selected = tblInfo.getSelectedRow();
-        int selected2 = tblInfo.getSelectedColumn();
         ModifyStudent m = new ModifyStudent();
         m.setVisible(true);
-        Object SelectedRowNumber = (Object) tblInfo.getModel().getValueAt(selected, selected2);
-        int L = (Integer) SelectedRowNumber;
-        String newStudentNumber = StudentNumber[L] + " ";
-        String newAverageA = StudentAverageA[L]+ " ";
-        String newAverageB = StudentAverageB[L]+ " ";
-        String newAverageC = StudentAverageC[L]+ " ";
-        String newAverageD = StudentAverageD[L]+ " ";
-        m.txtFName.setText(StudentFirstName[L]);
-        m.txtLName.setText(StudentLastName[L]);
+        
+        String newStudentNumber = StudentNumber[0] + " ";
+        String newAverageA = StudentAverageA[0]+ " ";
+        String newAverageB = StudentAverageB[0]+ " ";
+        String newAverageC = StudentAverageC[0]+ " ";
+        String newAverageD = StudentAverageD[0]+ " ";
+        String newTotalAvg = StudentTotalAvg[0]+ " ";
+        m.txtFName.setText(StudentFirstName[0] + " ");
+        m.txtLName.setText(StudentLastName[0] + " ");
         m.txtNumber.setText(newStudentNumber);
-        m.txtSubjectA.setText(StudentSubjectA[L]);
-        m.txtSubjectB.setText(StudentSubjectB[L]);
-        m.txtSubjectC.setText(StudentSubjectC[L]);
-        m.txtSubjectD.setText(StudentSubjectD[L]);
+        m.txtSubjectA.setText(StudentSubjectA[0]);
+        m.txtSubjectB.setText(StudentSubjectB[0]);
+        m.txtSubjectC.setText(StudentSubjectC[0]);
+        m.txtSubjectD.setText(StudentSubjectD[0]);
         m.txtAvgA.setText(newAverageA);
         m.txtAvgB.setText(newAverageB);
         m.txtAvgC.setText(newAverageC);
         m.txtAvgD.setText(newAverageD);
+        m.txtTotalAvg.setText(StudentTotalAvg[0]);
         ((DefaultTableModel)tblInfo.getModel()).removeRow(selected);
         }
         else{

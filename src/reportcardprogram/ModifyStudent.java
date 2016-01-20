@@ -427,6 +427,6 @@ public class ModifyStudent extends javax.swing.JFrame {
     public javax.swing.JTextField txtSubjectB;
     public javax.swing.JTextField txtSubjectC;
     public javax.swing.JTextField txtSubjectD;
-    public static javax.swing.JTextField txtTotalAvg;
+    public javax.swing.JTextField txtTotalAvg;
     // End of variables declaration//GEN-END:variables
 }
