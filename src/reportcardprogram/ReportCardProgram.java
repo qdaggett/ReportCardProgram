@@ -172,14 +172,14 @@ public static   String StudentSubjectD[] = new String[99];
         m.txtFName.setText(StudentFirstName[L]);
         m.txtLName.setText(StudentLastName[L]);
         m.txtNumber.setText(newStudentNumber);
-        m.subjectA.setText(StudentSubjectA[L]);
-        m.subjectB.setText(StudentSubjectB[L]);
-        m.subjectC.setText(StudentSubjectC[L]);
-        m.subjectD.setText(StudentSubjectD[L]);
-        m.avgA.setText(newAverageA);
-        m.avgB.setText(newAverageB);
-        m.avgC.setText(newAverageC);
-        m.avgD.setText(newAverageD);
+        m.txtSubjectA.setText(StudentSubjectA[L]);
+        m.txtSubjectB.setText(StudentSubjectB[L]);
+        m.txtSubjectC.setText(StudentSubjectC[L]);
+        m.txtSubjectD.setText(StudentSubjectD[L]);
+        m.txtAvgA.setText(newAverageA);
+        m.txtAvgB.setText(newAverageB);
+        m.txtAvgC.setText(newAverageC);
+        m.txtAvgD.setText(newAverageD);
         ((DefaultTableModel)tblInfo.getModel()).removeRow(selected);
         }
         else{
