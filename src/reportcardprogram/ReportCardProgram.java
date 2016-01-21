@@ -35,6 +35,7 @@ public static    String StudentSubjectA[] = new String[99];
 public static    String StudentSubjectB[] = new String[99];
 public static   String StudentSubjectC[] = new String[99];
 public static   String StudentSubjectD[] = new String[99];
+public static String StudentTotalAvg[] = new String[99];
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -50,6 +51,7 @@ public static   String StudentSubjectD[] = new String[99];
         btnAddStudent = new javax.swing.JButton();
         btnModStudent = new javax.swing.JButton();
         btnDelStudent = new javax.swing.JButton();
+        MStudentRow = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -103,6 +105,8 @@ public static   String StudentSubjectD[] = new String[99];
             }
         });
 
+        MStudentRow.setText("0");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -119,7 +123,9 @@ public static   String StudentSubjectD[] = new String[99];
                 .addGap(61, 61, 61)
                 .addComponent(btnAddStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnDelStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(MStudentRow)
+                    .addComponent(btnDelStudent, javax.swing.GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE))
                 .addGap(29, 29, 29)
                 .addComponent(btnModStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(78, 78, 78))
@@ -136,7 +142,9 @@ public static   String StudentSubjectD[] = new String[99];
                     .addComponent(btnAddStudent)
                     .addComponent(btnModStudent)
                     .addComponent(btnDelStudent))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(MStudentRow, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         pack();
@@ -158,31 +166,33 @@ public static   String StudentSubjectD[] = new String[99];
     }//GEN-LAST:event_btnModStudentActionPerformed
 
     private void btnDelStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDelStudentActionPerformed
-        
-        if(tblInfo.getSelectedRow() > -1){
+        int MRow = Integer.parseInt(MStudentRow.getText());
+        if(MRow > -1){
         int selected = tblInfo.getSelectedRow();
-        int selected2 = tblInfo.getSelectedColumn();
         ModifyStudent m = new ModifyStudent();
         m.setVisible(true);
-        Object SelectedRowNumber = (Object) tblInfo.getModel().getValueAt(selected, selected2);
-        int L = (Integer) SelectedRowNumber;
-        String newStudentNumber = StudentNumber[L] + " ";
-        String newAverageA = StudentAverageA[L]+ " ";
-        String newAverageB = StudentAverageB[L]+ " ";
-        String newAverageC = StudentAverageC[L]+ " ";
-        String newAverageD = StudentAverageD[L]+ " ";
-        m.txtFName.setText(StudentFirstName[L]);
-        m.txtLName.setText(StudentLastName[L]);
+        
+        String newStudentNumber = StudentNumber[MRow] + " ";
+        String newAverageA = StudentAverageA[MRow]+ " ";
+        String newAverageB = StudentAverageB[MRow]+ " ";
+        String newAverageC = StudentAverageC[MRow]+ " ";
+        String newAverageD = StudentAverageD[MRow]+ " ";
+        String newTotalAvg = StudentTotalAvg[MRow]+ " ";
+        
+        
+        m.txtFName.setText(StudentFirstName[MRow] + " ");
+        m.txtLName.setText(StudentLastName[MRow] + " ");
         m.txtNumber.setText(newStudentNumber);
-        m.txtSubjectA.setText(StudentSubjectA[L]);
-        m.txtSubjectB.setText(StudentSubjectB[L]);
-        m.txtSubjectC.setText(StudentSubjectC[L]);
-        m.txtSubjectD.setText(StudentSubjectD[L]);
+        m.txtSubjectA.setText(StudentSubjectA[MRow]);
+        m.txtSubjectB.setText(StudentSubjectB[MRow]);
+        m.txtSubjectC.setText(StudentSubjectC[MRow]);
+        m.txtSubjectD.setText(StudentSubjectD[MRow]);
         m.txtAvgA.setText(newAverageA);
         m.txtAvgB.setText(newAverageB);
         m.txtAvgC.setText(newAverageC);
         m.txtAvgD.setText(newAverageD);
-        ((DefaultTableModel)tblInfo.getModel()).removeRow(selected);
+        m.txtTotalAvg.setText(StudentTotalAvg[MRow]);
+        ((DefaultTableModel)tblInfo.getModel()).removeRow(MRow);
         }
         else{
             new RemoveStudent().setVisible(true);
@@ -224,6 +234,7 @@ public static   String StudentSubjectD[] = new String[99];
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField MStudentRow;
     private java.awt.Label Title;
     private javax.swing.JButton btnAddStudent;
     private javax.swing.JButton btnDelStudent;

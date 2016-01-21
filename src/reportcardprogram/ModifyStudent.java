@@ -301,11 +301,13 @@ public class ModifyStudent extends javax.swing.JFrame {
     }//GEN-LAST:event_txtSubjectAActionPerformed
 
     private void btnConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmActionPerformed
-   int average;
+ReportCardProgram.i = ReportCardProgram.i+1;
+        int average;
     int subjectAverageA = Integer.parseInt(txtAvgA.getText());
     int subjectAverageB = Integer.parseInt(txtAvgB.getText());
     int subjectAverageC = Integer.parseInt(txtAvgC.getText());
     int subjectAverageD = Integer.parseInt(txtAvgD.getText());
+    int studentNumberInteger = Integer.parseInt(txtNumber.getText());
     average = (subjectAverageA+subjectAverageB+subjectAverageC+subjectAverageD)/4;
     String newAvg = average+" ";
     txtTotalAvg.setText(newAvg);
@@ -314,6 +316,27 @@ public class ModifyStudent extends javax.swing.JFrame {
     txtSubjectB.getText() + ": " + txtAvgB.getText(),
     txtSubjectC.getText() + ": " + txtAvgC.getText(),
             txtSubjectD.getText() + ": " + txtAvgD.getText()});
+    
+//    File outFile = new File("test.txt");
+//    PrintStream out = new PrintStream(outFile);
+    
+    // new Arrays for Students
+    
+   ReportCardProgram.RowID[ReportCardProgram.i]=ReportCardProgram.i;
+   ReportCardProgram.StudentAverageA[ReportCardProgram.i]=subjectAverageA;
+   ReportCardProgram.StudentAverageB[ReportCardProgram.i]=subjectAverageB;
+   ReportCardProgram.StudentAverageC[ReportCardProgram.i]=subjectAverageC;
+   ReportCardProgram.StudentAverageD[ReportCardProgram.i]=subjectAverageD;
+     ReportCardProgram.StudentNumber[ReportCardProgram.i]=studentNumberInteger;
+   ReportCardProgram.StudentFirstName[ReportCardProgram.i]=txtFName.getText();
+   ReportCardProgram.StudentLastName[ReportCardProgram.i]=txtLName.getText();
+   ReportCardProgram.StudentSubjectA[ReportCardProgram.i]=txtSubjectA.getText();
+   ReportCardProgram.StudentSubjectB[ReportCardProgram.i]=txtSubjectB.getText();
+   ReportCardProgram.StudentSubjectC[ReportCardProgram.i]=txtSubjectC.getText();
+   ReportCardProgram.StudentSubjectD[ReportCardProgram.i]=txtSubjectD.getText();
+   ReportCardProgram.StudentTotalAvg[ReportCardProgram.i]=txtTotalAvg.getText();
+   
+    
     
     this.dispose();
 
@@ -427,6 +450,6 @@ public class ModifyStudent extends javax.swing.JFrame {
     public javax.swing.JTextField txtSubjectB;
     public javax.swing.JTextField txtSubjectC;
     public javax.swing.JTextField txtSubjectD;
-    public static javax.swing.JTextField txtTotalAvg;
+    public javax.swing.JTextField txtTotalAvg;
     // End of variables declaration//GEN-END:variables
 }

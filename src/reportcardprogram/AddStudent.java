@@ -327,6 +327,7 @@ public class AddStudent extends javax.swing.JFrame {
    ReportCardProgram.StudentSubjectB[ReportCardProgram.i]=txtSubjectB.getText();
    ReportCardProgram.StudentSubjectC[ReportCardProgram.i]=txtSubjectC.getText();
    ReportCardProgram.StudentSubjectD[ReportCardProgram.i]=txtSubjectD.getText();
+   ReportCardProgram.StudentTotalAvg[ReportCardProgram.i]=txtTotalAvg.getText();
    
     
     
