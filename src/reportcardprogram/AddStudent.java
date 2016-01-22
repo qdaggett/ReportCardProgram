@@ -14,6 +14,8 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.NumberFormatter;
 import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 public class AddStudent extends javax.swing.JFrame {
 
     /**
@@ -310,8 +312,24 @@ public class AddStudent extends javax.swing.JFrame {
     txtSubjectC.getText() + ": " + txtAvgC.getText(),
             txtSubjectD.getText() + ": " + txtAvgD.getText()});
     
-//    File outFile = new File("test.txt");
-//    PrintStream out = new PrintStream(outFile);
+    File outFile = new File(txtFName.getText()+".txt");
+        try {
+            PrintStream out = new PrintStream(outFile);
+            out.println(txtFName.getText());
+            out.println(txtLName.getText());
+            out.println(txtTotalAvg.getText());
+            out.println(txtSubjectA.getText());
+            out.println(txtAvgA.getText());
+            out.println(txtSubjectB.getText());
+            out.println(txtAvgB.getText());
+            out.println(txtSubjectC.getText());
+            out.println(txtAvgC.getText());
+            out.println(txtSubjectD.getText());
+            out.println(txtAvgD.getText());
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(AddStudent.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     
     // new Arrays for Students
     
